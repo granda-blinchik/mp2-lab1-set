@@ -8,6 +8,7 @@
 -->
 
 ## Новости
+ In the field of the gravitational centre with masss M, a material point with mass t moves, which, in addition to the gravitational force, is subjeck to a weaker viscous friction force F. 
 
   - 2015-10-02
     - Создан [Gitter-чат][gitter], в котором можно задавать вопросы про выполнение лабораторных работ
