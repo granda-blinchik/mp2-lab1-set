@@ -295,3 +295,24 @@ TEST(TSet, check_negation_operator)
 
   EXPECT_EQ(expSet, set1);
 }
+TEST(TSet, double_delete_element)
+{
+	const int size = 5;
+	TSet s(size);
+	s.InsElem(2);
+	s.DelElem(2);
+	s.DelElem(2);
+	EXPECT_EQ(0, s.IsMember(2));
+}
+TEST(TSet, on_three_sets_union)
+{
+	const int size = 5;
+	TSet s1(size), s2(size), s3(size);
+	s1.InsElem(1);
+	s2.InsElem(2);
+	s3.InsElem(3);
+	TSet res = s1 + s2 + s3;
+	EXPECT_EQ(1, res.IsMember(1));
+	EXPECT_EQ(1, res.IsMember(2));
+	EXPECT_EQ(1, res.IsMember(3));
+}
